@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>MWIcon.ico</ApplicationIcon>
+    <NuGetAudit>False</NuGetAudit>
+    <StartupObject></StartupObject>
+    <PlatformTarget>x86</PlatformTarget>
+    <Title>TslGame 服务器启动器</Title>
+    <Authors>在下王某人</Authors>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <Description>服务器启动器。</Description>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <ErrorReport>none</ErrorReport>
+    <Copyright>Copyright © 2025 在下王某人 版权所有.</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Window1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\Fonts\Alimama FYT VF.ttf" />
+    <None Remove="Resource\Image\Line1.png" />
+    <None Remove="Resource\Image\MWIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Window1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MWIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Fonts\Alimama FYT VF.ttf" />
+    <Resource Include="Resource\Image\Line1.png" />
+    <Resource Include="Resource\Image\TslGameServerBack1.jpg" />
+    <Resource Include="Resource\Image\MWIcon.ico" />
+  </ItemGroup>
+
+</Project>
