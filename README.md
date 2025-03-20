@@ -1,4 +1,4 @@
-# PUBG 2017 - TslGame Server Launcher
+# PUBG 2017 - TslGame 服务器启动器
 
 A PUBG 2017 PS Server Launcher source code file/一个 PUBG 2017 PS 服务器启动器源代码。
 
