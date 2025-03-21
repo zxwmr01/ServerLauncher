@@ -1,0 +1,21 @@
+﻿<Window x:Class="ServerLauncher.NewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerLauncher"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- 状态显示 -->
+        <TextBlock Text="服务器状态：" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Margin="0,0,10,0"/>
+        <TextBlock x:Name="StatusText" 
+                   Text="未运行" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center" 
+                   FontSize="20" 
+                   FontWeight="Bold" 
+                   Foreground="Red"
+                   Margin="0,0,590,0"/>
+    </Grid>
+</Window>
